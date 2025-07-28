@@ -1,0 +1,15 @@
+.reactMarkDown h2{
+    color: black; 
+    text-align: start;
+    margin-bottom: 30px;
+    font-weight: 500;
+        font-size: 1.5rem;
+
+}
+
+.reactMarkDown p{
+    font-size: 1rem;
+    text-align: justify;
+    color: #333333;
+
+}

@@ -1,0 +1,42 @@
+.slick-prev.slick-arrow {
+  padding: 10px;
+  z-index: 10;
+  transition: transform 0.1s ease;
+}
+
+.slick-next.slick-arrow {
+  padding: 10px;
+  z-index: 10;
+  transition: transform 0.1s ease;
+}
+
+.slick-arrow {
+  z-index: 1;
+  width: 40px;
+  height: 40px;
+}
+
+.slick-arrow:before {
+  font-size: 10px;
+}
+
+.slick-next {
+  right: 0;
+}
+
+.slick-prev {
+  left: 0;
+}
+.slick-dots {
+  bottom: 20px;
+}
+
+.slick-dots li.slick-active button::before {
+  color: #ffffff; /* Replace with your secondary color */
+}
+
+.slick-dots li button::before {
+  font-size: 14px;
+  color: #999595;
+  opacity: 0.5;
+}

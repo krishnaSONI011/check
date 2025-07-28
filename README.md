@@ -82,4 +82,3 @@ For starting the project in development:
 $ yarn dev
 ```
 
-# check

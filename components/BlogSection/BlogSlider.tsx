@@ -16,6 +16,7 @@ import { BlogCardProps } from "@/lib/data";
 // };
 
 export default function BlogSlider({ data }: any) {
+  const SlickSlider = Slider as unknown as React.ComponentType<any>;
   const [sliderRef, setSliderRef] = useState<Slider | null>(null);
 
   const settings = {
@@ -28,7 +29,7 @@ export default function BlogSlider({ data }: any) {
 
   return (
     <div className="relative">
-      <Slider {...settings} ref={setSliderRef} className="mb-6">
+      <SlickSlider {...settings} ref={setSliderRef} className="mb-6">
         {data.map((card: any, index: any) => {
           if (card && card.attributes) {
             return (
@@ -47,7 +48,7 @@ export default function BlogSlider({ data }: any) {
           }
           return null;
         })}
-      </Slider>
+      </SlickSlider>
       <div className="absolute left-1/2 mt-6 transform -translate-x-1/2 flex">
         <button
           className="mr-2 flex items-center justify-center h-10 w-10 rounded-full border-white border-2"

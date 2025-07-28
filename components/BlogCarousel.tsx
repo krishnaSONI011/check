@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import Slider from "react-slick";
+import ReactSlick from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { IoIosArrowBack } from "react-icons/io";
@@ -38,7 +38,7 @@ export default function BlogCarousel({ data }: any) {
       },
     ],
   };
-
+  const Slider = ReactSlick as unknown as React.FC<any>;
   return (
     <div>
       <Slider {...settings}>

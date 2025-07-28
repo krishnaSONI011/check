@@ -1,7 +1,6 @@
 "use client";
 import React, { useState } from "react";
 import ReactModal from "react-modal";
-
 import Image from "next/image";
 import { getStrapiMedia } from "@/lib/api-helpers";
 import NotFound from "../NotFound";

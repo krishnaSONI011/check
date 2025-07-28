@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
-import Modal from "react-modal";
+import ReactModal from "react-modal";
+
 import Image from "next/image";
 import { getStrapiMedia } from "@/lib/api-helpers";
 import NotFound from "../NotFound";
@@ -37,6 +38,7 @@ type TeamMembersProps = {
 };
 
 export default function TeamMembers({ data }: TeamMembersProps) {
+  const Modal = ReactModal as unknown as React.FC<ReactModal.Props>;
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedMember, setSelectedMember] = useState<TeamMember | null>(null);
 

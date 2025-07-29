@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import Slider from "react-slick";
+import  ReactSlick from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { getStrapiMedia } from "@/lib/api-helpers";
@@ -11,8 +11,8 @@ import { IoArrowForwardOutline } from "react-icons/io5";
 import { AiOutlineStop } from "react-icons/ai";
 
 export default function ServicesSlider({ data }: any) {
-  const [sliderRef, setSliderRef] = useState<Slider | null>(null);
-
+  const [sliderRef, setSliderRef] = useState<ReactSlick | null>(null);
+  const Slider = ReactSlick as unknown as React.FC<any>;
   const settings = {
     infinite: true,
     speed: 500,

@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import Slider from "react-slick";
+import  ReactSlick from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { getStrapiMedia } from "@/lib/api-helpers";
@@ -13,8 +13,8 @@ interface TestimoniProps {
 }
 
 export default function Testimony({ data }: TestimoniProps) {
-  const [sliderRef, setSliderRef] = useState<Slider | null>(null);
-
+  const [sliderRef, setSliderRef] = useState<ReactSlick | null>(null);
+  const Slider = ReactSlick as unknown as React.FC<any>;
   let slides = 1;
 
   console.log(data.length);

@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import Slider from "react-slick";
+import  ReactSlick from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { formatDate, getStrapiMedia } from "@/lib/api-helpers";
@@ -11,7 +11,8 @@ import Link from "next/link";
 import Image from "next/image";
 
 export default function NewsSlider({ data }: any) {
-  const [sliderRef, setSliderRef] = useState<Slider | null>(null);
+  const Slider = ReactSlick as unknown as React.FC<any>;
+  const [sliderRef, setSliderRef] = useState<ReactSlick | null>(null);
 
   const settings = {
     infinite: true,

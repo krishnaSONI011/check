@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import Slider from "react-slick";
+import  ReactSlick from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Hero, heroes } from "./Hero";
@@ -21,6 +21,7 @@ export default function MainCarousel() {
     nextArrow: <IoIosArrowForward color="white" />,
     prevArrow: <IoIosArrowBack color="white" />,
   };
+  const Slider = ReactSlick as unknown as React.FC<any>;
   return (
     <div>
       <Slider {...settings} arrows={true}>

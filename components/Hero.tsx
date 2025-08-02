@@ -9,36 +9,6 @@ interface HeroProps {
 
 const heroes: HeroProps[] = [
   {
-    imgSrc: "/images/main/slide4.jpeg",
-    heading: "",
-    highlightedWord: "",
-    highlightColor: "",
-  },
-  {
-    imgSrc: "/images/main/slide5.jpeg",
-    heading: "",
-    highlightedWord: "",
-    highlightColor: "",
-  },
-  {
-    imgSrc: "/images/main/slide7.jpeg",
-    heading: "",
-    highlightedWord: "",
-    highlightColor: "",
-  },
-  {
-    imgSrc: "/images/main/slide8.jpeg",
-    heading: "",
-    highlightedWord: "",
-    highlightColor: "",
-  },
-  {
-    imgSrc: "/images/main/slide-9.jpeg",
-    heading: "",
-    highlightedWord: "",
-    highlightColor: "",
-  },
-  {
     imgSrc: "/images/main/slide1.jpg",
     heading: "Bringing Partnership back to recruitment",
     highlightedWord: "Partnership",
